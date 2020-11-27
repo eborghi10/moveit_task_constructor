@@ -25,7 +25,7 @@ set(CMAKE_REQUIRED_INCLUDES ${moveit_core_INCLUDE_DIRS})
 set(CMAKE_REQUIRED_FLAGS "-std=c++11")
 CHECK_INCLUDE_FILE_CXX(moveit/collision_detection/collision_env.h MOVEIT_MASTER)
 if(NOT MOVEIT_MASTER)
-  set(MOVEIT_MASTER 0)
+  set(MOVEIT_MASTER 1)
 endif()
 add_definitions(-DMOVEIT_MASTER=${MOVEIT_MASTER})
 
